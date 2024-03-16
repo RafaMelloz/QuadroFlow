@@ -4,7 +4,7 @@ import { FaPlus } from "react-icons/fa";
 import { List } from '../List';
 
 export const ListSection = () => {
-    const [qntList, setQntList] = useState(['']);
+    const [qntList, setQntList] = useState([]);
 
     const addList = () => {
         if (qntList.length < 4) {
