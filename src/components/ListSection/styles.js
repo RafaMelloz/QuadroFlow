@@ -25,5 +25,12 @@ export const ListContainer = styled.main`
                 margin-right: 1rem;
             }
         }
+
+
+        @media screen and (max-width:580px) {
+        padding:1rem 2rem;
+    }
+
     `}
+    
 `

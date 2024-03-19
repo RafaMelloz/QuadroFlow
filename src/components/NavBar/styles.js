@@ -21,4 +21,9 @@ export const Nav = styled.nav`
         background-clip: text;
     }
 
+
+    @media screen and (max-width:580px) {
+        padding:1rem 2rem;
+    }
+
 `

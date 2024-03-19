@@ -30,14 +30,16 @@ export default function RegisterModal({ open, handleClose, addCard, textValue, s
                             name="text"
                             id="inp-Text"
                             cols="30"
-                            rows="10"
+                            rows="8"
                             placeholder='Escreva sua tarefa...'
                             value={textValue}
                             onChange={handleChange}
+                            required
                         />
 
-                        <label htmlFor="inp-color">Selecione a urgência</label><br />
+                        <label htmlFor="inp-color">Selecione a urgência:</label><br />
                         <select
+                            required
                             name="urgency"
                             id="inp-color"
                             value={slcValue}

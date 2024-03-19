@@ -23,6 +23,7 @@ export const CardContainer = styled.div`
         p{
             font-size: 1.4rem;
             text-align: justify;
+            word-wrap: break-word;
         }
 
     `}
