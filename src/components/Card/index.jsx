@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import * as Styled from './styles.js'
 export const Card = ({ data }) =>{
+
     return (
         <Styled.CardContainer divColor={data.urgency}>
             <div></div>

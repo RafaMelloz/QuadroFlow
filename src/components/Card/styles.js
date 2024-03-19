@@ -13,7 +13,7 @@ export const CardContainer = styled.div`
             position: absolute;
             width: 3rem;
             height: .2rem;
-            background-color: ${divColor || 'red'};
+            background-color: ${`#${divColor}` || 'red'};
             margin-bottom: 1rem;
             top: 1rem;
             left: -.4rem;

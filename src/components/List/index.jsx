@@ -5,6 +5,9 @@ import { Card } from '../Card';
 import { useState } from 'react';
 import RegisterModal from '../RegisterModal';
 import { ReactSortable } from 'react-sortablejs';
+import Swal from 'sweetalert2';
+
+
 
 
 export const List = ({ index, removeList, title }) =>{
@@ -27,6 +30,16 @@ export const List = ({ index, removeList, title }) =>{
     }
 
     const addCard = () => {
+        // Verifica se os campos estão vazios
+        if (!formData.text || !formData.urgency) {
+            Swal.fire({
+                title: "Preencha todos os campos",
+                icon: "error"
+            });
+            return; // Retorna para impedir a adição do cartão
+        }
+
+        // Se os campos não estiverem vazios, adiciona o cartão
         const newCard = {
             text: formData.text,
             urgency: formData.urgency
@@ -39,9 +52,6 @@ export const List = ({ index, removeList, title }) =>{
         handleClose(); // Fechar o modal após adicionar o cartão
     }
 
-    const removeCard = (cardIndex) => {
-        setCards(prevCards => prevCards.filter((_, index) => index !== cardIndex));
-    }
 
     return  (
         <>

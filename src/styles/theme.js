@@ -11,6 +11,9 @@ export const lightMode = {
     cardBG: '#f1f0f0',
 
     modalBG: '#f1f1f1',
+
+    alertBg:'#fff'
+
 }
 
 
@@ -28,5 +31,8 @@ export const darkMode ={
 
     modalBG: '#494949',
 
-    scrollTrack: '#000'
+    scrollTrack: '#000',
+
+    alertBg: '#515555'
+    
 }

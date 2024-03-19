@@ -46,9 +46,9 @@ export default function RegisterModal({ open, handleClose, addCard, textValue, s
                             onChange={handleChange}
                         >
                             <option value="" disabled>Selecione</option>
-                            <option value="Urgente">Urgente</option>
-                            <option value="Meio termo">Meio termo</option>
-                            <option value="Sem preocupação">Sem preocupação</option>
+                            <option value="d71d1d">Urgente</option>
+                            <option value="d5b514">Meio termo</option>
+                            <option value="29cf00">Sem preocupação</option>
                         </select>
 
                         <button type="button" onClick={addCard}>Adicionar Card</button>
