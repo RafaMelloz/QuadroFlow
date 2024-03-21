@@ -8,6 +8,8 @@ export const CardContainer = styled.div`
         padding: 2rem 1rem 1rem 1rem ;
         margin-bottom: 1rem;
         position: relative;
+            margin-right: 0.5rem;
+
 
         div{
             position: absolute;

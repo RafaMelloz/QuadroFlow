@@ -42,7 +42,7 @@ export const ContentList = styled.div`
             border-radius: 1rem;
             margin-top: 1rem;
             max-height: 80vh;
-
+            
             button{
                 border: none;
                 margin: 1rem auto;
@@ -67,7 +67,7 @@ export const ContentList = styled.div`
             
 
             .sorti::-webkit-scrollbar {
-                width: .6rem;
+                width: .4rem;
                 border-radius: 1rem;
                 margin-left: 5rem;
 
@@ -79,9 +79,8 @@ export const ContentList = styled.div`
             }   
 
             .sorti::-webkit-scrollbar-thumb {
-                background: red; 
+                background: ${theme.buttonAddText}; 
                 border-radius: 1rem;
-                
             }
         }
     `}
